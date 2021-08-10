@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\GitRepositories\Basketball3x3\Basketball3x3\App.xaml
-11151548125
+3-394500367
 
-5-2017746502
+7-554628082
 13-1505183044
-MainWindow.xaml;
+CreateTournament.xaml;MainWindow.xaml;TournamentViewer.xaml;
 images\splashscreen\splash1.png
 False
 

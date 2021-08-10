@@ -36,3 +36,7 @@ D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.csproj.Ge
 D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.csproj.CoreCompileInputs.cache
 D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.exe
 D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.pdb
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\TournamentViewer.g.cs
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\TournamentViewer.baml
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateTournament.g.cs
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateTournament.baml

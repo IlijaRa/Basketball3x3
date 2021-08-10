@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\GitRepositories\Basketball3x3\Basketball3x3\Basketball3x3\obj\Debug\
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\
 Basketball3x3
 none
 false
 DEBUG;TRACE
-D:\GitRepositories\Basketball3x3\Basketball3x3\Basketball3x3\App.xaml
-11151548125
+D:\GitRepositories\Basketball3x3\Basketball3x3\App.xaml
+3-394500367
 
-61434861427
+8-1396987449
 13-1505183044
-MainWindow.xaml;
-
+CreateTournament.xaml;MainWindow.xaml;TournamentViewer.xaml;
+images\splashscreen\splash1.png
 True
 
