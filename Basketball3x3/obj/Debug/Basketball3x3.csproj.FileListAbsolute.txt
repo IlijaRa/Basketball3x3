@@ -1,0 +1,38 @@
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\bin\Debug\Basketball3x3.exe.config
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\bin\Debug\Basketball3x3.exe
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\bin\Debug\Basketball3x3.pdb
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.csprojAssemblyReference.cache
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\obj\Debug\MainWindow.g.cs
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\obj\Debug\App.g.cs
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3_MarkupCompile.cache
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3_MarkupCompile.lref
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\obj\Debug\MainWindow.baml
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.g.resources
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.Properties.Resources.resources
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.csproj.GenerateResource.cache
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.csproj.CoreCompileInputs.cache
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.exe
+C:\Users\LifeBook A574\Desktop\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.pdb
+D:\GitRepositories\Basketball3x3\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.csprojAssemblyReference.cache
+D:\GitRepositories\Basketball3x3\Basketball3x3\Basketball3x3\obj\Debug\MainWindow.g.cs
+D:\GitRepositories\Basketball3x3\Basketball3x3\Basketball3x3\obj\Debug\App.g.cs
+D:\GitRepositories\Basketball3x3\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3_MarkupCompile.cache
+D:\GitRepositories\Basketball3x3\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3_MarkupCompile.lref
+D:\GitRepositories\Basketball3x3\Basketball3x3\Basketball3x3\obj\Debug\MainWindow.baml
+D:\GitRepositories\Basketball3x3\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.g.resources
+D:\GitRepositories\Basketball3x3\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.pdb
+D:\GitRepositories\Basketball3x3\Basketball3x3\bin\Debug\Basketball3x3.exe.config
+D:\GitRepositories\Basketball3x3\Basketball3x3\bin\Debug\Basketball3x3.exe
+D:\GitRepositories\Basketball3x3\Basketball3x3\bin\Debug\Basketball3x3.pdb
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.csprojAssemblyReference.cache
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\MainWindow.g.cs
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\App.g.cs
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3_MarkupCompile.cache
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3_MarkupCompile.lref
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\MainWindow.baml
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.g.resources
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.Properties.Resources.resources
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.csproj.GenerateResource.cache
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.csproj.CoreCompileInputs.cache
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.exe
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.pdb
