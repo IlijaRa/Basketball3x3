@@ -9,8 +9,8 @@
     <Grid Background="#fab578">
         <Image HorizontalAlignment="Left" Height="336" Margin="-146,234,0,-170" VerticalAlignment="Top" Width="476" Source="images/splashscreen/splash1.png"/>
         <Label x:Name="label_Tournament" Content="Create member" FontFamily="Century Gothic" FontSize="25" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="First name:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="34,92,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201"/>
+        <Label Content="First name:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="34,87,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201"/>
         <Label Content="Last name:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="35,142,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
         <Label Content="E-mail:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="35,198,0,0" VerticalAlignment="Top"/>

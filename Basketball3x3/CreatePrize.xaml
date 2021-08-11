@@ -1,0 +1,24 @@
+﻿<Window x:Class="Basketball3x3.CreatePrize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Basketball3x3"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" MouseDown="Window_MouseDown"
+        Title="CreatePrize" Height="400" Width="400">
+    <Grid Background="#fab578">
+        <Image HorizontalAlignment="Left" Height="336" Margin="-358,229,0,-165" VerticalAlignment="Top" Width="476" Source="images/splashscreen/splash1.png"/>
+        <Label x:Name="label_Tournament" Content="Create prize" FontFamily="Century Gothic" FontSize="25" HorizontalAlignment="Left" Margin="116,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Place number:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="34,87,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="191,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161"/>
+        <Label Content="Place name:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="35,142,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="191,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"/>
+        <Label Content="Prize amount:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="35,198,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="191,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"/>
+        <Label Content="Prize percentage:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="35,276,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="191,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"/>
+        <Button Content="Create prize" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="123,324,0,0" VerticalAlignment="Top" Width="146" Height="40"/>
+        <Label Content="-or-" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="171,236,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="109" Margin="31,198,0,0" Stroke="Black" VerticalAlignment="Top" Width="336"/>
+    </Grid>
+</Window>
