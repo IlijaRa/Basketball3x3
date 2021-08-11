@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Basketball3x3"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" MouseDown="Window_MouseDown"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="300" Width="400">
+    <Grid Background="#fab578">
+        <Image HorizontalAlignment="Left" Height="336" Margin="-132,60,0,-96" VerticalAlignment="Top" Width="476" Source="images/splashscreen/splash1.png"/>
+
+        <Label x:Name="label_Tournament" Content="Tournament dashboard" FontFamily="Century Gothic" FontSize="25" HorizontalAlignment="Left" Margin="47,0,0,0" VerticalAlignment="Top"/>
+        <Label Content="Load existing tournament:" FontFamily="Century Gothic" FontSize="17" HorizontalContentAlignment="Center" Margin="29,60,35,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="36" Margin="37,92,0,0" VerticalAlignment="Top" Width="318"/>
+        <Button Content="Load tournament" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Margin="74,133,0,0" VerticalAlignment="Top" Width="245" Height="65"/>
+        <Button Content="Create tournament" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Margin="74,203,0,0" VerticalAlignment="Top" Width="245" Height="65"/>
+
     </Grid>
 </Window>
