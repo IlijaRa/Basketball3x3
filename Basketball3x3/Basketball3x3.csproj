@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CreateMember.xaml.cs">
+      <DependentUpon>CreateMember.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CreateTeam.xaml.cs">
       <DependentUpon>CreateTeam.xaml</DependentUpon>
     </Compile>
@@ -64,6 +67,10 @@
     <Compile Include="TournamentViewer.xaml.cs">
       <DependentUpon>TournamentViewer.xaml</DependentUpon>
     </Compile>
+    <Page Include="CreateMember.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CreateTeam.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

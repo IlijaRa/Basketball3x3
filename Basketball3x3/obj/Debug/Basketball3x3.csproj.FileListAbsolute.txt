@@ -42,3 +42,5 @@ D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateTournament.g.cs
 D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateTournament.baml
 D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateTeam.g.cs
 D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateTeam.baml
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateMember.g.cs
+D:\GitRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateMember.baml

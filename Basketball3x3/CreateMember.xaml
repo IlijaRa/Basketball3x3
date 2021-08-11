@@ -1,0 +1,23 @@
+﻿<Window x:Class="Basketball3x3.CreateMember"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Basketball3x3"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" MouseDown="Window_MouseDown"
+        Title="CreateMember" Height="400" Width="400">
+    <Grid Background="#fab578">
+        <Image HorizontalAlignment="Left" Height="336" Margin="-146,234,0,-170" VerticalAlignment="Top" Width="476" Source="images/splashscreen/splash1.png"/>
+        <Label x:Name="label_Tournament" Content="Create member" FontFamily="Century Gothic" FontSize="25" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="First name:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="34,92,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201"/>
+        <Label Content="Last name:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="35,142,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Label Content="E-mail:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="35,198,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Label Content="Cellphone:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="35,251,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Button Content="Create member" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="123,324,0,0" VerticalAlignment="Top" Width="146" Height="40"/>
+
+    </Grid>
+</Window>
