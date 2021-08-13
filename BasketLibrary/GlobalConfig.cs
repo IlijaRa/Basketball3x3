@@ -8,18 +8,22 @@ namespace BasketLibrary
 {
     public static class GlobalConfig
     {
-        public static List<IDataConnection> Connections { get ; private set; }
+        public static List<IDataConnection> Connections { get; private set; } = new List<IDataConnection>();
 
         public static void InitializeConnections(bool MicrosoftSQLDB, bool jsonFile)
         {
             if (MicrosoftSQLDB)
             {
-                // TODO: Create the MicrosoftSQL connection
+                // TODO: Set up the MicrosoftSQL connection
+                MicrosoftSQLConnector mssql = new MicrosoftSQLConnector();
+                Connections.Add(mssql);
             }
 
             if (jsonFile)
             {
-                // TODO: Create the json file connection
+                // TODO: Set up the json file connection
+                JsonFileConnerctor json = new JsonFileConnerctor();
+                Connections.Add(json);
             }
         }
     }
