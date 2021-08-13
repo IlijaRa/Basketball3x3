@@ -9,6 +9,10 @@ namespace BasketLibrary
     public class PrizeModel
     {
         /// <summary>
+        /// Unique identificator of the prize
+        /// </summary>
+        public int Id { get; set; }
+        /// <summary>
         /// Place number (for examle 1, 2, 3, 4, etc.)
         /// </summary>
         public int PlaceNumber { get; set; }

@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace BasketLibrary
 {
-    public class MicrosoftSQLConnector: IDataConnection
+    public class MicrosoftSQLConnector : IDataConnection
     {
-
+        public PrizeModel CreatePrize(PrizeModel model)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
