@@ -9,7 +9,7 @@ namespace BasketLibrary
     public class PrizeModel
     {
         /// <summary>
-        /// Unique identificator of the prize
+        /// The Unique identificator for the prize
         /// </summary>
         public int Id { get; set; }
         /// <summary>
