@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BasketLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Basketball3x3
 {
 
@@ -21,6 +23,7 @@ namespace Basketball3x3
         public MainWindow()
         {
             InitializeComponent();
+            GlobalConfig.InitializeConnections(true, true);
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)

@@ -1,0 +1,6 @@
+D:\GitRepositories\Basketball3x3\BasketLibrary\bin\Debug\BasketLibrary.dll
+D:\GitRepositories\Basketball3x3\BasketLibrary\bin\Debug\BasketLibrary.pdb
+D:\GitRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.csprojAssemblyReference.cache
+D:\GitRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.csproj.CoreCompileInputs.cache
+D:\GitRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.dll
+D:\GitRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.pdb
