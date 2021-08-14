@@ -1,4 +1,6 @@
 ﻿using BasketLibrary;
+using BasketLibrary.DataAccess;
+using BasketLibrary.Models;
 using System.Windows;
 using System.Windows.Input;
 

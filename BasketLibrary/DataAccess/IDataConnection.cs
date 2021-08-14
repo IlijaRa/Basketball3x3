@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasketLibrary
+namespace BasketLibrary.DataAccess
 {
     public interface IDataConnection
     {
