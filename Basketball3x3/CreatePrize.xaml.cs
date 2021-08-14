@@ -1,17 +1,6 @@
 ﻿using BasketLibrary;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Basketball3x3
 {
@@ -31,12 +20,28 @@ namespace Basketball3x3
             }
         }
 
-        private void CreatePrize_Click(object sender, RoutedEventArgs e)
+        private void CreatePrizeBtn_Click(object sender, RoutedEventArgs e)
         {
             if (ValidateForm())
             {
-                //PrizeModel model = new PrizeModel();
-                //model.PlaceName = Textbox1.Text;
+                PrizeModel model = new PrizeModel(Textbox1.Text,
+                                                  Textbox2.Text,
+                                                  Textbox3.Text,
+                                                  Textbox4.Text);
+
+                foreach(IDataConnection db in GlobalConfig.Connections)
+                {
+                    db.CreatePrize(model);
+                }
+
+                Textbox1.Clear();
+                Textbox2.Clear();
+                Textbox3.Text = "0";
+                Textbox4.Text = "0";
+            }
+            else
+            {
+                MessageBox.Show("This form has invalid information. Please, check it and try again.");
             }
         }
 

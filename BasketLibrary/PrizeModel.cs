@@ -37,14 +37,14 @@ namespace BasketLibrary
 
         }
 
-        public PrizeModel(string PlaceName, string PlaceNumber, string PrizeAmount, string PrizePercentage)
+        public PrizeModel(string PlaceNumber, string PlaceName, string PrizeAmount, string PrizePercentage)
         {
-
-            this.PlaceName = PlaceName;
 
             int PlaceNumberValue = 0;
             int.TryParse(PlaceNumber,out PlaceNumberValue);
             this.PlaceNumber = PlaceNumberValue;
+
+            this.PlaceName = PlaceName;
 
             decimal PrizeAmountValue = 0;
             decimal.TryParse(PrizeAmount, out PrizeAmountValue);
