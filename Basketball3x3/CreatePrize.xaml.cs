@@ -46,11 +46,11 @@ namespace Basketball3x3
 
             int placeNumber = 0;
             decimal prizeAmount = 0;
-            int prizePercentage = 0;
+            double prizePercentage = 0;
 
             bool PlaceNumberIsValidNumber = int.TryParse(Textbox1.Text, out placeNumber);
             bool PrizeAmountIsValidAmount = decimal.TryParse(Textbox3.Text, out prizeAmount);
-            bool PrizePercentageIsValidPercentage = int.TryParse(Textbox4.Text, out prizePercentage);
+            bool PrizePercentageIsValidPercentage = double.TryParse(Textbox4.Text, out prizePercentage);
             
             if (PlaceNumberIsValidNumber == false)
                 output = false;
