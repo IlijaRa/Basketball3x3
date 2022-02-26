@@ -33,5 +33,24 @@ namespace Basketball3x3
                 this.DragMove();
             }
         }
+
+        private void Button_CreateTournament(object sender, RoutedEventArgs e)
+        {
+            CreateTournament ct = new CreateTournament();
+            ct.Show();
+            this.Hide();
+        }
+
+        private void Button_LoadTournament(object sender, RoutedEventArgs e)
+        {
+            if (combobox1.SelectedIndex < -1) // checks if combobox item is selected
+                MessageBox.Show("Select tournament first.");
+            else
+            {
+                TournamentViewer tw = new TournamentViewer();
+                tw.Show();
+                tw.Hide();
+            }
+        }
     }
 }

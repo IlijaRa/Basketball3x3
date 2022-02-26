@@ -29,5 +29,9 @@ namespace Basketball3x3
             }
         }
 
+        private void Button_X(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

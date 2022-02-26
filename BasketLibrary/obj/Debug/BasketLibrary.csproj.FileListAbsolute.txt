@@ -4,3 +4,12 @@ D:\GitRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.csprojAss
 D:\GitRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.csproj.CoreCompileInputs.cache
 D:\GitRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.dll
 D:\GitRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.pdb
+D:\GitHubRepositories\Basketball3x3\BasketLibrary\bin\Debug\BasketLibrary.dll
+D:\GitHubRepositories\Basketball3x3\BasketLibrary\bin\Debug\BasketLibrary.pdb
+D:\GitHubRepositories\Basketball3x3\BasketLibrary\bin\Debug\Dapper.dll
+D:\GitHubRepositories\Basketball3x3\BasketLibrary\bin\Debug\Dapper.xml
+D:\GitHubRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.csproj.AssemblyReference.cache
+D:\GitHubRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.csproj.CoreCompileInputs.cache
+D:\GitHubRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.csproj.CopyComplete
+D:\GitHubRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.dll
+D:\GitHubRepositories\Basketball3x3\BasketLibrary\obj\Debug\BasketLibrary.pdb

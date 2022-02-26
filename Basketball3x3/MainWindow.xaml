@@ -9,11 +9,11 @@
     <Grid Background="#fab578">
         <Image HorizontalAlignment="Left" Height="336" Margin="-132,60,0,-96" VerticalAlignment="Top" Width="476" Source="images/splashscreen/splash1.png"/>
 
-        <Label x:Name="label_Tournament" Content="Tournament dashboard" FontFamily="Century Gothic" FontSize="25" HorizontalAlignment="Left" Margin="47,0,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Tournament" Content="Tournament dashboard" FontFamily="Century Gothic" FontSize="25" HorizontalAlignment="Left" Margin="47,26,0,0" VerticalAlignment="Top"/>
         <Label Content="Load existing tournament:" FontFamily="Century Gothic" FontSize="17" HorizontalContentAlignment="Center" Margin="29,60,35,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="36" Margin="37,92,0,0" VerticalAlignment="Top" Width="318"/>
-        <Button Content="Load tournament" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Margin="74,133,0,0" VerticalAlignment="Top" Width="245" Height="65"/>
-        <Button Content="Create tournament" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Margin="74,203,0,0" VerticalAlignment="Top" Width="245" Height="65"/>
+        <ComboBox x:Name="combobox1" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="36" Margin="37,92,0,0" VerticalAlignment="Top" Width="318"/>
+        <Button Content="Load tournament" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Margin="74,133,0,0" VerticalAlignment="Top" Width="245" Height="65" Click="Button_LoadTournament"/>
+        <Button Content="Create tournament" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Margin="74,203,0,0" VerticalAlignment="Top" Width="245" Height="65" Click="Button_CreateTournament"/>
 
     </Grid>
 </Window>

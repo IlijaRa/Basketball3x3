@@ -20,5 +20,6 @@
         <Button x:Name="CreatePrizeBtn" Content="Create prize" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="123,324,0,0" VerticalAlignment="Top" Width="146" Height="40" Click="CreatePrizeBtn_Click"/>
         <Label Content="-or-" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="171,236,0,0" VerticalAlignment="Top"/>
         <Rectangle HorizontalAlignment="Left" Height="109" Margin="29,198,0,0" Stroke="Black" VerticalAlignment="Top" Width="336"/>
+        <Button Content="X" HorizontalAlignment="Left" Margin="362,10,0,0" VerticalAlignment="Top" Width="28" Click="Button_X"/>
     </Grid>
 </Window>

@@ -11,13 +11,14 @@
         <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="23" Margin="40,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318"/>
         <Label Content="Select team member:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="40,142,0,0" VerticalAlignment="Top"/>
         <ComboBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="23" Margin="40,178,0,0" VerticalAlignment="Top" Width="318"/>
-        <Button Content="Create new" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="230,145,0,0" VerticalAlignment="Top" Width="128"/>
+        <Button Content="Create new" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="230,145,0,0" VerticalAlignment="Top" Width="128" Click="Button_CreateMember"/>
         <Label x:Name="label_Tournament" Content="Create team" FontFamily="Century Gothic" FontSize="25" HorizontalAlignment="Left" Margin="318,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Team member list" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="419,56,0,0" VerticalAlignment="Top"/>
         <ListBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="326" Margin="419,92,0,0" VerticalAlignment="Top" Width="268"/>
         <Button Content="Delete&#xA;selected" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="703,230,0,0" VerticalAlignment="Top" Width="75" Height="50"/>
         <Image HorizontalAlignment="Left" Height="336" Margin="-118,226,0,-112" VerticalAlignment="Top" Width="476" Source="images/splashscreen/splash1.png"/>
         <Button Content="Add member" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="131,226,0,0" VerticalAlignment="Top" Width="120" Height="40"/>
+        <Button Content="X" HorizontalAlignment="Left" Margin="762,10,0,0" VerticalAlignment="Top" Width="28" Click="Button_X"/>
 
     </Grid>
 </Window>

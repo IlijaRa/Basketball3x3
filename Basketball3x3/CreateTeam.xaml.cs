@@ -29,5 +29,16 @@ namespace Basketball3x3
                 this.DragMove();
             }
         }
+
+        private void Button_X(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button_CreateMember(object sender, RoutedEventArgs e)
+        {
+            CreateMember cm = new CreateMember();
+            cm.ShowDialog();
+        }
     }
 }
