@@ -10,22 +10,22 @@ namespace BasketLibrary
 {
     public static class GlobalConfig
     {
-        public static List<IDataConnection> Connections { get; private set; } = new List<IDataConnection>();
+        public static IDataConnection Connection { get; private set; }
 
-        public static void InitializeConnections(bool MicrosoftSQLDB, bool jsonFile)
+        public static void InitializeConnections(DatabaseType dbType)
         {
-            if (MicrosoftSQLDB)
+            if (dbType == DatabaseType.MSSQL)
             {
                 // TODO: Set up the MicrosoftSQL connection
                 MicrosoftSQLConnector mssql = new MicrosoftSQLConnector();
-                Connections.Add(mssql);
+                Connection = mssql;
             }
 
-            if (jsonFile)
+            else if (dbType == DatabaseType.JsonFile)
             {
                 // TODO: Set up the json file connection
                 JsonFileConnerctor json = new JsonFileConnerctor();
-                Connections.Add(json);
+                Connection = json;
             }
         }
 

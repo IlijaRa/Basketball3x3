@@ -31,10 +31,7 @@ namespace Basketball3x3
                                                   Textbox3.Text,
                                                   Textbox4.Text);
 
-                foreach(IDataConnection db in GlobalConfig.Connections)
-                {
-                    db.CreatePrize(model);
-                }
+                GlobalConfig.Connection.CreatePrize(model);
 
                 Textbox1.Clear();
                 Textbox2.Clear();
