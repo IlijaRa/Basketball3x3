@@ -24,8 +24,15 @@ namespace BasketLibrary
             else if (dbType == DatabaseType.JsonFile)
             {
                 // TODO: Set up the json file connection
-                JsonFileConnerctor json = new JsonFileConnerctor();
+                JsonFileConnector json = new JsonFileConnector();
                 Connection = json;
+            }
+
+            else if (dbType == DatabaseType.TextFile)
+            {
+                // TODO: Set up the json file connection
+                TextFileConnector text = new TextFileConnector();
+                Connection = text;
             }
         }
 

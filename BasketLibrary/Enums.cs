@@ -9,6 +9,7 @@ namespace BasketLibrary
     public enum DatabaseType
     {
         MSSQL,
-        JsonFile
+        JsonFile,
+        TextFile
     }
 }
