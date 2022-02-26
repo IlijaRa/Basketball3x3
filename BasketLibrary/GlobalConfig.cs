@@ -40,5 +40,11 @@ namespace BasketLibrary
         {
             return ConfigurationManager.ConnectionStrings[name].ConnectionString;
         }
+
+        // We store our files in the bin directory, so this function returns the path to it
+        public static string DefaultPath()
+        {
+            return Environment.CurrentDirectory;
+        }
     }
 }
