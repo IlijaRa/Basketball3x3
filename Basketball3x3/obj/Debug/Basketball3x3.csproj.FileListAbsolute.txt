@@ -77,3 +77,5 @@ D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.csproj
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.csproj.CopyComplete
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.exe
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.pdb
+D:\GitHubRepositories\Basketball3x3\Basketball3x3\bin\Debug\Dapper.dll
+D:\GitHubRepositories\Basketball3x3\Basketball3x3\bin\Debug\Dapper.xml
