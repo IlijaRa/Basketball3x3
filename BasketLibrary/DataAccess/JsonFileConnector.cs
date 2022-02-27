@@ -9,6 +9,11 @@ namespace BasketLibrary.DataAccess
 {
     public class JsonFileConnector : IDataConnection
     {
+        public PersonModel CreatePerson(PersonModel model)
+        {
+            throw new NotImplementedException();
+        }
+
         //TODO: Wire up the CreatePrize for the textFile
         public PrizeModel CreatePrize(PrizeModel model)
         {

@@ -9,6 +9,11 @@ namespace BasketLibrary.Models
     public class PersonModel
     {
         /// <summary>
+        /// The Unique identificator for the person
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
         /// Persons first name
         /// </summary>
         public string FirstName { get; set; }

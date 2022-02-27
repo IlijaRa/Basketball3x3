@@ -11,7 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using BasketLibrary;
+using BasketLibrary.Models;
 namespace Basketball3x3
 {
 
@@ -33,5 +34,53 @@ namespace Basketball3x3
         {
             this.Close();
         }
+
+        private void Button_CreateMember(object sender, RoutedEventArgs e)
+        {
+            if (ValidateForm())
+            {
+                PersonModel p = new PersonModel();
+
+                p.FirstName = Textbox1.Text;
+                p.LastName = Textbox2.Text;
+                p.EmailAddress = Textbox3.Text;
+                p.CellphoneNumber = Textbox4.Text;
+
+                GlobalConfig.Connection.CreatePerson(p);
+
+                Textbox1.Clear();
+                Textbox2.Clear();
+                Textbox3.Clear();
+                Textbox4.Clear();
+            }
+            else
+            {
+                MessageBox.Show("You need to fill in all of the fields.");
+            }
+        }
+
+        private bool ValidateForm()
+        {
+            bool isValid = true;
+            if(Textbox1.Text.Length == 0)
+            {
+                isValid = false;
+            }
+            if (Textbox2.Text.Length == 0)
+            {
+                isValid = false;
+            }
+            if (Textbox3.Text.Length == 0)
+            {
+                isValid = false;
+            }
+            if (Textbox4.Text.Length == 0)
+            {
+                isValid = false;
+            }
+            return isValid;
+        }
+
+        
     }
 }

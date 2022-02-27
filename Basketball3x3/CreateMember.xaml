@@ -10,14 +10,14 @@
         <Image HorizontalAlignment="Left" Height="336" Margin="-146,234,0,-170" VerticalAlignment="Top" Width="476" Source="images/splashscreen/splash1.png"/>
         <Label x:Name="label_Tournament" Content="Create member" FontFamily="Century Gothic" FontSize="25" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top"/>
         <Label Content="First name:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="34,87,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201"/>
+        <TextBox x:Name="Textbox1" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201"/>
         <Label Content="Last name:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="35,142,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <TextBox x:Name="Textbox2" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
         <Label Content="E-mail:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="35,198,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <TextBox x:Name="Textbox3" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
         <Label Content="Cellphone:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="35,251,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
-        <Button Content="Create member" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="123,324,0,0" VerticalAlignment="Top" Width="146" Height="40"/>
+        <TextBox x:Name="Textbox4" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="151,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Button Content="Create member" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="123,324,0,0" VerticalAlignment="Top" Width="146" Height="40" Click="Button_CreateMember"/>
         <Button Content="X" HorizontalAlignment="Left" Margin="362,10,0,0" VerticalAlignment="Top" Width="28" Click="Button_X"/>
 
     </Grid>
