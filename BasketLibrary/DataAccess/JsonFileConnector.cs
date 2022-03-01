@@ -14,12 +14,16 @@ namespace BasketLibrary.DataAccess
             throw new NotImplementedException();
         }
 
-        //TODO: Wire up the CreatePrize for the textFile
         public PrizeModel CreatePrize(PrizeModel model)
         {
             model.Id = 1;
 
             return model;
+        }
+
+        public List<PersonModel> GetPerson_All()
+        {
+            throw new NotImplementedException();
         }
     }
 }

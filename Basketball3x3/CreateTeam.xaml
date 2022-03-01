@@ -5,20 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Basketball3x3"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" MouseDown="Window_MouseDown"
-        Title="CreateTeam" Height="450" Width="800">
+        Title="CreateTeam" Height="520" Width="800">
     <Grid Background="#fab578">
+        <Image HorizontalAlignment="Left" Height="336" Margin="366,396,-42,-152" VerticalAlignment="Top" Width="476" Source="images/splashscreen/splash1.png"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="445" Margin="395,56,0,0" VerticalAlignment="Top" Width="372"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="182" Margin="31,56,0,0" VerticalAlignment="Top" Width="336"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="235" Margin="31,266,0,0" VerticalAlignment="Top" Width="336"/>
+
         <Label Content="Team name:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="40,56,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="23" Margin="40,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318"/>
-        <Label Content="Select team member:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="40,142,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="23" Margin="40,178,0,0" VerticalAlignment="Top" Width="318"/>
-        <Button Content="Create new" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="230,145,0,0" VerticalAlignment="Top" Width="128" Click="Button_CreateMember"/>
+        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="23" Margin="40,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318"/>
+        <Label Content="Select team member:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="40,118,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cb_teamMembers" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="23" Margin="40,149,0,0" VerticalAlignment="Top" Width="318"/>
         <Label x:Name="label_Tournament" Content="Create team" FontFamily="Century Gothic" FontSize="25" HorizontalAlignment="Left" Margin="318,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Team member list" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="419,56,0,0" VerticalAlignment="Top"/>
-        <ListBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="326" Margin="419,92,0,0" VerticalAlignment="Top" Width="268"/>
-        <Button Content="Delete&#xA;selected" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="703,230,0,0" VerticalAlignment="Top" Width="75" Height="50"/>
-        <Image HorizontalAlignment="Left" Height="336" Margin="-118,226,0,-112" VerticalAlignment="Top" Width="476" Source="images/splashscreen/splash1.png"/>
-        <Button Content="Add member" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="131,226,0,0" VerticalAlignment="Top" Width="120" Height="40"/>
+        <Label Content="Team member list" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="408,56,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lb_teamMembers" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="262" Margin="408,87,0,0" VerticalAlignment="Top" Width="347"/>
+        <Button Content="Remove&#xA;selected" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="533,377,0,0" VerticalAlignment="Top" Width="97" Height="50" Click="Button_RemoveSelected"/>
+        <Button Content="Add member" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="131,192,0,0" VerticalAlignment="Top" Width="146" Height="40" Click="Button_AddMember"/>
         <Button Content="X" HorizontalAlignment="Left" Margin="762,10,0,0" VerticalAlignment="Top" Width="28" Click="Button_X"/>
+        <Label Content="First name:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="42,275,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Textbox1" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="159,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201"/>
+        <Label Content="Last name:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="43,318,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Textbox2" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="159,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Label Content="E-mail:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="43,362,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Textbox3" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="159,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Label Content="Cellphone:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="43,406,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Textbox4" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="159,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Button Content="Create member" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="131,454,0,0" VerticalAlignment="Top" Width="146" Height="40" Click="Button_CreateMember"/>
+        <Button Content="Create team" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="408,454,0,0" VerticalAlignment="Top" Width="347" Height="40" Click="Button_CreateTeam"/>
 
     </Grid>
 </Window>

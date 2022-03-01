@@ -11,9 +11,11 @@ namespace BasketLibrary.DataAccess
 {
     public class MicrosoftSQLConnector : IDataConnection
     {
+        private const string dbName = "Basketball3x3";
+
         public PersonModel CreatePerson(PersonModel model)
         {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Basketball3x3")))
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString(dbName)))
             {
                 var p = new DynamicParameters();
                 p.Add("@FirstName", model.FirstName);
@@ -30,7 +32,6 @@ namespace BasketLibrary.DataAccess
             }
         }
 
-        // TODO: Make the CratePrize actually save to the database
         /// <summary>
         /// Saves a new prize to the MicrosoftSQLDB.
         /// </summary>
@@ -38,7 +39,7 @@ namespace BasketLibrary.DataAccess
         /// <returns>The prize information, including the unique identifier.</returns>
         public PrizeModel CreatePrize(PrizeModel model)
         {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Basketball3x3")))
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString(dbName)))
             {
                 var p = new DynamicParameters();
                 p.Add("@PlaceNumber", model.PlaceNumber);
@@ -53,6 +54,17 @@ namespace BasketLibrary.DataAccess
 
                 return model;
             }
+        }
+
+        public List<PersonModel> GetPerson_All()
+        {
+            List<PersonModel> output;
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString(dbName)))
+            {
+                output = connection.Query<PersonModel>("dbo.spPerson_GetAll").ToList();
+            }
+
+            return output;
         }
     }
 }

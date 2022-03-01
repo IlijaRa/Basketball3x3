@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using BasketLibrary;
 using BasketLibrary.Models;
+
 namespace Basketball3x3
 {
 
@@ -52,6 +53,7 @@ namespace Basketball3x3
                 Textbox2.Clear();
                 Textbox3.Clear();
                 Textbox4.Clear();
+
             }
             else
             {
