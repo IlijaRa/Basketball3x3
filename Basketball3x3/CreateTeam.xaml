@@ -15,7 +15,7 @@
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="235" Margin="31,266,0,0" VerticalAlignment="Top" Width="336"/>
 
         <Label Content="Team name:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="40,56,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="23" Margin="40,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318"/>
+        <TextBox x:Name="tb_teamName" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="23" Margin="40,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318"/>
         <Label Content="Select team member:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="40,118,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="cb_teamMembers" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="23" Margin="40,149,0,0" VerticalAlignment="Top" Width="318"/>
         <Label x:Name="label_Tournament" Content="Create team" FontFamily="Century Gothic" FontSize="25" HorizontalAlignment="Left" Margin="318,10,0,0" VerticalAlignment="Top"/>

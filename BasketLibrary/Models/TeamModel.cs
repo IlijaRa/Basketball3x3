@@ -9,6 +9,10 @@ namespace BasketLibrary.Models
     public class TeamModel
     {
         /// <summary>
+        /// The Unique identificator for the team
+        /// </summary>
+        public int Id { get; set; }
+        /// <summary>
         /// Name for a team
         /// </summary>
         public string TeamName { get; set; }

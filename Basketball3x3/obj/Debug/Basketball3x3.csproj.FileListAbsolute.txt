@@ -55,7 +55,6 @@ D:\GitHubRepositories\Basketball3x3\Basketball3x3\bin\Debug\Basketball3x3.pdb
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\bin\Debug\BasketLibrary.dll
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\bin\Debug\BasketLibrary.pdb
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3.csproj.AssemblyReference.cache
-D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateMember.g.cs
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreatePrize.g.cs
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateTeam.g.cs
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateTournament.g.cs
@@ -64,7 +63,6 @@ D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\TournamentViewer.g.c
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\App.g.cs
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3_MarkupCompile.cache
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\Basketball3x3_MarkupCompile.lref
-D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateMember.baml
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreatePrize.baml
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateTeam.baml
 D:\GitHubRepositories\Basketball3x3\Basketball3x3\obj\Debug\CreateTournament.baml

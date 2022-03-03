@@ -141,7 +141,13 @@ namespace Basketball3x3
 
         private void Button_CreateTeam(object sender, RoutedEventArgs e)
         {
+            TeamModel t = new TeamModel();
+            t.TeamName = tb_teamName.Text;
+            t.TeamMembers = selectedMembers;
 
+            GlobalConfig.Connection.CreateTeam(t);
+
+            this.Hide();
         }
     }
 }

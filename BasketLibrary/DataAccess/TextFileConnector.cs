@@ -12,7 +12,7 @@ namespace BasketLibrary.DataAccess
     {
         private const string PrizeFile = "PrizeModels.csv";
         private const string PersonFile = "PersonModels.csv";
-
+        private const string TeamFile = "TeamModels.csv";
         public PersonModel CreatePerson(PersonModel model)
         {
             // Load the text file and convert the text to List<PersonModel>
@@ -55,6 +55,29 @@ namespace BasketLibrary.DataAccess
             // Convert the prizes to List<string>
             // Save the List<string> to the text file
             prizes.SaveToPrizeFile(PrizeFile);
+
+            return model;
+        }
+
+        public TeamModel CreateTeam(TeamModel model)
+        {
+            // Load the text file and convert the text to List<TeamModel>
+            List<TeamModel> teams = TeamFile.FullFilePath().LoadFile().ConvertToTeamModel(PersonFile);
+
+            // Find the max Id
+            int currentId = 1;
+
+            if (teams.Count > 0) // in case that text file does not exist
+                currentId = teams.OrderByDescending(x => x.Id).First().Id + 1;
+
+            model.Id = currentId;
+
+            // Add the new record with the new Id (max + 1)
+            teams.Add(model);
+
+            // Convert the prizes to List<string>
+            // Save the List<string> to the text file
+            teams.SaveToTeamFile(TeamFile);
 
             return model;
         }
