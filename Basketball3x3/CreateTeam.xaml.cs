@@ -141,13 +141,18 @@ namespace Basketball3x3
 
         private void Button_CreateTeam(object sender, RoutedEventArgs e)
         {
-            TeamModel t = new TeamModel();
-            t.TeamName = tb_teamName.Text;
-            t.TeamMembers = selectedMembers;
+            if (lb_teamMembers.Items.Count > 3)
+                MessageBox.Show("Max number of team members is 3!");
+            else
+            {
+                TeamModel t = new TeamModel();
+                t.TeamName = tb_teamName.Text;
+                t.TeamMembers = selectedMembers;
 
-            GlobalConfig.Connection.CreateTeam(t);
+                GlobalConfig.Connection.CreateTeam(t);
 
-            this.Hide();
+                this.Hide();
+            }
         }
     }
 }

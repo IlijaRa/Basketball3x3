@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BasketLibrary;
+using BasketLibrary.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,9 +19,28 @@ namespace Basketball3x3
 
     public partial class CreateTournament : Window
     {
+        List<TeamModel> availableTeams = GlobalConfig.Connection.GetTeam_All();
+        List<TeamModel> selectedTeams = new List<TeamModel>();
+        List<PrizeModel> selectedPrizes = new List<PrizeModel>(); 
         public CreateTournament()
         {
             InitializeComponent();
+            WireUpLists();
+        }
+
+        private void WireUpLists()
+        {
+            cb_selectTeam.ItemsSource = null;
+            cb_selectTeam.ItemsSource = availableTeams;
+            cb_selectTeam.DisplayMemberPath = "TeamName";
+
+            lb_tournamentTeams.ItemsSource = null;
+            lb_tournamentTeams.ItemsSource = selectedTeams;
+            lb_tournamentTeams.DisplayMemberPath = "TeamName";
+
+            lb_prizes.ItemsSource = null;
+            lb_prizes.ItemsSource = selectedPrizes;
+            lb_prizes.DisplayMemberPath = "PlaceName";
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
@@ -47,6 +68,19 @@ namespace Basketball3x3
         {
             CreatePrize cp = new CreatePrize();
             cp.ShowDialog();
+        }
+
+        private void Button_AddTeam(object sender, RoutedEventArgs e)
+        {
+            TeamModel t = (TeamModel)cb_selectTeam.SelectedItem;
+            
+            if(t != null)
+            {
+                availableTeams.Remove(t);
+                selectedTeams.Add(t);
+
+                WireUpLists();
+            }
         }
     }
 }

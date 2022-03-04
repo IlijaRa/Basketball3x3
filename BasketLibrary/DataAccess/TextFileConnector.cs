@@ -86,5 +86,10 @@ namespace BasketLibrary.DataAccess
         {
             return PersonFile.FullFilePath().LoadFile().ConvertToPersonModel();
         }
+
+        public List<TeamModel> GetTeam_All()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

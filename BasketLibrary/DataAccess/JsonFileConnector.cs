@@ -30,5 +30,10 @@ namespace BasketLibrary.DataAccess
         {
             throw new NotImplementedException();
         }
+
+        public List<TeamModel> GetTeam_All()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

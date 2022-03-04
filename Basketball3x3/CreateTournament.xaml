@@ -17,17 +17,17 @@
         <Label Content="Entry fee:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="42,140,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="22" Margin="133,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
         <Label Content="Select team:" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="42,190,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="23" Margin="42,226,0,0" VerticalAlignment="Top" Width="318"/>
+        <ComboBox x:Name="cb_selectTeam" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="23" Margin="42,226,0,0" VerticalAlignment="Top" Width="318"/>
         <Button Content="Create new" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="162,193,0,0" VerticalAlignment="Top" Width="198" Click="Button_CreateTeam"/>
-        <Button Content="Add team" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="133,268,0,0" VerticalAlignment="Top" Width="120" Height="40"/>
+        <Button Content="Add team" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="133,268,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="Button_AddTeam"/>
         <Button Content="Create prize" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="133,330,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="Button_CreatePrize"/>
 
         <Label Content="Teams/Players" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="419,56,0,0" VerticalAlignment="Top"/>
-        <ListBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="117" Margin="419,92,0,0" VerticalAlignment="Top" Width="268"/>
-        <Button Content="Delete&#xA;selected" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="703,126,0,0" VerticalAlignment="Top" Width="75" Height="50"/>
-        <Label Content="Teams/Players" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="419,217,0,0" VerticalAlignment="Top"/>
-        <ListBox HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="117" Margin="419,253,0,0" VerticalAlignment="Top" Width="268"/>
-        <Button Content="Delete&#xA;selected" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="703,287,0,0" VerticalAlignment="Top" Width="75" Height="50"/>
+        <ListBox x:Name="lb_tournamentTeams" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="117" Margin="419,92,0,0" VerticalAlignment="Top" Width="268"/>
+        <Button Content="Remove&#xA;selected" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="703,126,0,0" VerticalAlignment="Top" Width="75" Height="50"/>
+        <Label Content="Prizes" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="419,217,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lb_prizes" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="117" Margin="419,253,0,0" VerticalAlignment="Top" Width="268"/>
+        <Button Content="Remove&#xA;selected" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="703,287,0,0" VerticalAlignment="Top" Width="75" Height="50"/>
         <Button Content="Create tournament" FontFamily="Century Gothic" FontSize="17" HorizontalAlignment="Left" Margin="296,390,0,0" VerticalAlignment="Top" Width="188" Height="50"/>
         <Button Content="Go back" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" FontSize="17" Click="Button_GoBack"/>
 
