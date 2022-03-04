@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 namespace Basketball3x3
 {
 
-    public partial class CreateTournament : Window
+    public partial class CreateTournament : Window, IPrizeRequester, ITeamRequester
     {
         List<TeamModel> availableTeams = GlobalConfig.Connection.GetTeam_All();
         List<TeamModel> selectedTeams = new List<TeamModel>();
@@ -60,13 +60,15 @@ namespace Basketball3x3
 
         private void Button_CreateTeam(object sender, RoutedEventArgs e)
         {
-            CreateTeam ct = new CreateTeam();
+            // Call the CreateTeam form
+            CreateTeam ct = new CreateTeam(this);
             ct.ShowDialog();
         }
 
         private void Button_CreatePrize(object sender, RoutedEventArgs e)
         {
-            CreatePrize cp = new CreatePrize();
+            // Call the CreatePrize form
+            CreatePrize cp = new CreatePrize(this);
             cp.ShowDialog();
         }
 
@@ -81,6 +83,70 @@ namespace Basketball3x3
 
                 WireUpLists();
             }
+        }
+
+        public void PrizeComplete(PrizeModel model)
+        {
+            // Get back from the form a PrizeModel
+            // Take the PrizeModel and put it into out list of selected prizes
+            selectedPrizes.Add(model);
+            WireUpLists();
+        }
+
+        public void TeamComplete(TeamModel model)
+        {
+            selectedTeams.Add(model);
+            WireUpLists();
+        }
+
+        private void Button_RemoveSelectedTeam(object sender, RoutedEventArgs e)
+        {
+
+            TeamModel t = (TeamModel)lb_tournamentTeams.SelectedItem;
+            if (t != null)
+            {
+                selectedTeams.Remove(t);
+                availableTeams.Add(t);
+
+                WireUpLists();
+            }
+        }
+
+        private void Button_RemoveSelectedPrize(object sender, RoutedEventArgs e)
+        {
+            PrizeModel p = (PrizeModel)lb_prizes.SelectedItem;
+            if (p != null)
+            {
+                selectedPrizes.Remove(p);
+                WireUpLists();
+            }
+        }
+
+        private void Button_CreateTournament(object sender, RoutedEventArgs e)
+        {
+            // Validate data
+            decimal fee = 0;
+            bool feeAcceptable = decimal.TryParse(tb_entryFee.Text, out fee);
+            if (!feeAcceptable)
+            {
+                MessageBox.Show("Youu need to enter a valid entry fee.", "Invalid fee!", 
+                                                                         MessageBoxButton.OK, 
+                                                                         MessageBoxImage.Error);
+                return;
+            }
+
+            //Create our TournamentModel
+            TournamentModel tm = new TournamentModel();
+            tm.TournamentName = tb_tournamentName.Text;
+            tm.EntryFee = fee;
+            tm.Prizes = selectedPrizes;
+            tm.EnteredTeams = selectedTeams;
+
+            //Create tournament entry
+            //Create all of the prizes entries
+            //Create all of team entries
+
+            //Create our matchups
         }
     }
 }

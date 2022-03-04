@@ -71,31 +71,27 @@ namespace BasketLibrary.DataAccess.TextHelpers
 
         public static List<TeamModel> ConvertToTeamModel(this List<string> lines, string personFileName)
         {
-            // TODO: DOESN'T WORKK!!
             // id, team name, list of members separated by the pipe
             List<TeamModel> output = new List<TeamModel>();
-            //List<PersonModel> people = personFileName.FullFilePath().LoadFile().ConvertToPersonModel();
+            List<PersonModel> people = personFileName.FullFilePath().LoadFile().ConvertToPersonModel();
 
-            //foreach(var line in lines)
-            //{
-            //    string[] cols = line.Split(',');
-            //    TeamModel t = new TeamModel();
-            //    t.Id = int.Parse(cols[0]);
-            //    t.TeamName = cols[1];
+            foreach (string line in lines)
+            {
+                string[] cols = line.Split(',');
 
-            //    string[] personIds = cols[2].Split('|');
+                TeamModel t = new TeamModel();
+                t.Id = int.Parse(cols[0]);
+                t.TeamName = cols[1];
+                t.TeamMembers = new List<PersonModel>();
 
-            //    foreach (string id in personIds)
-            //    {
-            //        int person_id = int.Parse(id);
-            //        foreach (PersonModel p in people)
-            //        {
-            //            if(p.Id == person_id)
-            //                t.TeamMembers.Add(p);
-            //        }
-            //    }
-            //    output.Add(t);
-            //}
+                string[] personIds = cols[2].Split('|');
+
+                foreach (string id in personIds)
+                {
+                    t.TeamMembers.Add(people.Where(x => x.Id == int.Parse(id)).First());
+                }
+                output.Add(t);
+            }
 
             return output;
         }

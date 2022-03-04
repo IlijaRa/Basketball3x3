@@ -21,12 +21,13 @@ namespace Basketball3x3
     {
         private List<PersonModel> availableMembers = GlobalConfig.Connection.GetPerson_All();
         private List<PersonModel> selectedMembers = new List<PersonModel>();
-
-        public CreateTeam()
+        ITeamRequester calling;
+        public CreateTeam(ITeamRequester caller)
         {
             InitializeComponent();
             //CreateSampleData();
             WireUpLists();
+            calling = caller;
         }
 
         private void CreateSampleData()
@@ -150,8 +151,8 @@ namespace Basketball3x3
                 t.TeamMembers = selectedMembers;
 
                 GlobalConfig.Connection.CreateTeam(t);
-
-                this.Hide();
+                calling.TeamComplete(t);
+                this.Close();
             }
         }
     }

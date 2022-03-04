@@ -23,7 +23,7 @@ namespace Basketball3x3
         public MainWindow()
         {
             InitializeComponent();
-            GlobalConfig.InitializeConnections(DatabaseType.MSSQL);
+            GlobalConfig.InitializeConnections(DatabaseType.TextFile);
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)

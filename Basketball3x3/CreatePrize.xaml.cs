@@ -9,9 +9,11 @@ namespace Basketball3x3
 
     public partial class CreatePrize : Window
     {
-        public CreatePrize()
+        IPrizeRequester callingForm;
+        public CreatePrize(IPrizeRequester caller)
         {
             InitializeComponent();
+            callingForm = caller;
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
@@ -32,11 +34,12 @@ namespace Basketball3x3
                                                   Textbox4.Text);
 
                 GlobalConfig.Connection.CreatePrize(model);
-
-                Textbox1.Clear();
-                Textbox2.Clear();
-                Textbox3.Text = "0";
-                Textbox4.Text = "0";
+                callingForm.PrizeComplete(model);
+                this.Close();
+                //Textbox1.Clear();
+                //Textbox2.Clear();
+                //Textbox3.Text = "0";
+                //Textbox4.Text = "0";
             }
             else
             {
