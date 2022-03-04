@@ -14,6 +14,7 @@
         <ComboBox x:Name="combobox1" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Height="36" Margin="37,92,0,0" VerticalAlignment="Top" Width="318"/>
         <Button Content="Load tournament" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Margin="74,133,0,0" VerticalAlignment="Top" Width="245" Height="65" Click="Button_LoadTournament"/>
         <Button Content="Create tournament" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="17" Margin="74,203,0,0" VerticalAlignment="Top" Width="245" Height="65" Click="Button_CreateTournament"/>
+        <Button Content="X" HorizontalAlignment="Left" Margin="362,10,0,0" VerticalAlignment="Top" Width="28" Click="Button_X"/>
 
     </Grid>
 </Window>

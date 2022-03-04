@@ -52,5 +52,10 @@ namespace Basketball3x3
                 tw.Hide();
             }
         }
+
+        private void Button_X(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
