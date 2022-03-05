@@ -26,6 +26,11 @@ namespace BasketLibrary.DataAccess
             throw new NotImplementedException();
         }
 
+        public void CreateTournament(TournamentModel model)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<PersonModel> GetPerson_All()
         {
             throw new NotImplementedException();

@@ -13,6 +13,7 @@ namespace BasketLibrary.DataAccess
         private const string PrizeFile = "PrizeModels.csv";
         private const string PersonFile = "PersonModels.csv";
         private const string TeamFile = "TeamModels.csv";
+        private const string TournamentFile = "TournamentModels.csv";
         public PersonModel CreatePerson(PersonModel model)
         {
             // Load the text file and convert the text to List<PersonModel>
@@ -80,6 +81,29 @@ namespace BasketLibrary.DataAccess
             teams.SaveToTeamFile(TeamFile);
 
             return model;
+        }
+
+        public void CreateTournament(TournamentModel model)
+        {
+            // Load the text file and convert the text to List<TeamModel>
+            List<TournamentModel> tournaments = TournamentFile.FullFilePath()
+                                                              .LoadFile()
+                                                              .ConvertToTournamentModel(PersonFile, TeamFile, PrizeFile);
+
+            // Find the max Id
+            int currentId = 1;
+
+            if (tournaments.Count > 0) // in case that text file does not exist
+                currentId = tournaments.OrderByDescending(x => x.Id).First().Id + 1;
+
+            model.Id = currentId;
+
+            // Add the new record with the new Id (max + 1)
+            tournaments.Add(model);
+
+            // Convert the prizes to List<string>
+            // Save the List<string> to the text file
+            tournaments.SaveToTournamentFile(TournamentFile);
         }
 
         public List<PersonModel> GetPerson_All()

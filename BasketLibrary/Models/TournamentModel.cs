@@ -8,6 +8,12 @@ namespace BasketLibrary.Models
 {
     public class TournamentModel
     {
+
+        /// <summary>
+        /// The Unique identificator for the tournament
+        /// </summary>
+        public int Id { get; set; }
+
         /// <summary>
         /// Name of the tournament
         /// </summary>

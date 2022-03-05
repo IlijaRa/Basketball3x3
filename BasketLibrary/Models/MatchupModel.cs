@@ -8,6 +8,12 @@ namespace BasketLibrary.Models
 {
     public class MatchupModel
     {
+
+        /// <summary>
+        /// The Unique identificator for the matchup
+        /// </summary>
+        public int Id { get; set; }
+
         /// <summary>
         /// Teams that play against each other
         /// </summary>

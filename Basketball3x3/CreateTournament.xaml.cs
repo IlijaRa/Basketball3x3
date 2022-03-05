@@ -142,11 +142,15 @@ namespace Basketball3x3
             tm.Prizes = selectedPrizes;
             tm.EnteredTeams = selectedTeams;
 
+            //TODO: Wire our matchups
+
+
             //Create tournament entry
             //Create all of the prizes entries
             //Create all of team entries
+            GlobalConfig.Connection.CreateTournament(tm);
 
-            //Create our matchups
+            
         }
     }
 }
